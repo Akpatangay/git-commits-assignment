@@ -1,0 +1,87 @@
+.main-container {
+    padding: 10px;
+}
+
+.main-header{
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.input-name {
+    padding-bottom: 5px;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.commit-card {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    width: 80%;
+    padding: 10px 16px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.commit-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.commitName {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.commitDetails {
+    font-size: 12px;
+}
+
+.timer {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.error {
+    color: red;
+}

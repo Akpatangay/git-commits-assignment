@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import moment from 'moment/moment.js';
+import Timer from './timer.jsx';
 import './main.css';
 
 export default class Main extends Component {
@@ -11,6 +12,7 @@ export default class Main extends Component {
             ownerName: 'Akpatangay',
             repo: 'git-commits-assignment',
             commits: [],
+            startTimer: false,
             error: false
         }
     }
@@ -25,14 +27,16 @@ export default class Main extends Component {
     }
 
     saveDetails=()=>{
-        if(
-            this.state.authKey.trim() && 
-            this.state.ownerName.trim() &&
-            this.state.repo.trim()
-        ) {
-            // make api call
-            this.fetchCommitsFromApi()
-        }
+        this.setState({startTimer: false}, ()=>{
+            if(
+                this.state.authKey.trim() && 
+                this.state.ownerName.trim() &&
+                this.state.repo.trim()
+            ) {
+                // make api call
+                this.fetchCommitsFromApi()
+            }
+        })
     }
 
     renderTime=(time)=>{
@@ -58,7 +62,7 @@ export default class Main extends Component {
             }
             // store in localStorage if success
             localStorage.setItem('gitDetails', JSON.stringify(obj));
-            this.setState({commits: data, error: false})
+            this.setState({commits: data, startTimer: true, error: false})
         }).catch((e) => {
             // show error alert
             if(!this.state.error) {
@@ -120,6 +124,7 @@ export default class Main extends Component {
                             />
                         </label> */}
                         <input onClick={this.saveDetails} type='submit' />
+                        <Timer start={this.state.startTimer} fetchDetails={this.saveDetails} />
                     </div>
                 </div>
                 <div className='main-body'>
