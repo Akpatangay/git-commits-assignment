@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.eee19441.css",
-    "main.js": "/react-gh-pages/static/js/main.0baf7bd4.js",
-    "static/js/787.09ba5231.chunk.js": "/react-gh-pages/static/js/787.09ba5231.chunk.js",
-    "static/media/logo.svg": "/react-gh-pages/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/react-gh-pages/index.html",
-    "main.eee19441.css.map": "/react-gh-pages/static/css/main.eee19441.css.map",
-    "main.0baf7bd4.js.map": "/react-gh-pages/static/js/main.0baf7bd4.js.map",
-    "787.09ba5231.chunk.js.map": "/react-gh-pages/static/js/787.09ba5231.chunk.js.map"
+    "main.css": "/git-commits-assignment/static/css/main.eee19441.css",
+    "main.js": "/git-commits-assignment/static/js/main.662f82cb.js",
+    "static/js/787.09ba5231.chunk.js": "/git-commits-assignment/static/js/787.09ba5231.chunk.js",
+    "static/media/logo.svg": "/git-commits-assignment/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/git-commits-assignment/index.html",
+    "main.eee19441.css.map": "/git-commits-assignment/static/css/main.eee19441.css.map",
+    "main.662f82cb.js.map": "/git-commits-assignment/static/js/main.662f82cb.js.map",
+    "787.09ba5231.chunk.js.map": "/git-commits-assignment/static/js/787.09ba5231.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eee19441.css",
-    "static/js/main.0baf7bd4.js"
+    "static/js/main.662f82cb.js"
   ]
 }
